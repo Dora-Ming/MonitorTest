@@ -77,7 +77,7 @@ if __name__ == "__main__":
     url = "https://www.jd.com"
     m = UrlMonitor(url)
 
-    for i in range(6):
+    for i in range(3):
         m.perfrom()
         time.sleep(m.interval)
     
