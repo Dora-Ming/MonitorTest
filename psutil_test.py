@@ -134,6 +134,7 @@ def createfile(filename):
     file_log = open(filename, mode="a")
     return file_log
 
+
 # 关闭文件
 def closefile(file_log):
     file_log.close()
