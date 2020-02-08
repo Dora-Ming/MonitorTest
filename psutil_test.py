@@ -56,7 +56,7 @@ def write_disk(file_log):
             file_log.write("磁盘使用率:" + str(disk_usage.percent) + "%" + "\n")
         except:
             file_log.write("磁盘路径:" + disk_part.device + "\n")
-            file_log.write("设备未就绪" + "\n")
+            file_log.write("设备未就绪" + "\n\n")
             continue
         
         file_log.write("\n")
@@ -131,7 +131,7 @@ def write_oth(file_log):
 
 # 创建文件，记录各个指标的信息
 def createfile(filename):
-    file_log = open(filename, mode="r+")
+    file_log = open(filename, mode="a")
     return file_log
 
 # 关闭文件
